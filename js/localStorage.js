@@ -4,12 +4,12 @@
 const createAccount = document.getElementById("CreateAccount");
 
 // Inputs
-const firstName = document.getElementById("FirstName");
-const lastName = document.getElementById("LastName");
-const userPhone = document.getElementById("UserPhone");
-const userEmail = document.getElementById("UserEmail");
-const userPassword_1 = document.getElementById("UserPassword-1");
-const userPassword_2 = document.getElementById("UserPassword-2");
+const firstName = document.getElementById("firstName");
+const lastName = document.getElementById("lastName");
+const userPhone = document.getElementById("userPhone");
+const userEmail = document.getElementById("userEmail");
+const userPassword_1 = document.getElementById("userPassword-1");
+const userPassword_2 = document.getElementById("userPassword-2");
 
 // Tabla
 const userList = document.getElementById("user-list");
@@ -75,6 +75,7 @@ class Store {
       users = [];
     } else {
       users = JSON.parse(localStorage.getItem("users"));
+      console.log (users)
     }
 
     return users;
