@@ -1,0 +1,319 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+body {
+  height: 100vh;
+  font-family: sans-serif;
+  background: url(../img/imatge.jpg) no-repeat center center/cover;
+}
+
+.user_logo {
+  height: 100px;
+  width: 100px;
+  background-color: red;
+  border-radius: 50%;
+  position: relative;
+  box-sizing: border-box;
+  left: calc(320px / 3.5);
+  top: -70px;
+}
+.user_logo i {
+  font-size: 5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.user_logo img{
+  height: 100px;
+  width: 100px;
+  background-color: red;
+  border-radius: 50%;
+  position: relative;
+  box-sizing: border-box;
+  left: calc(320px / 3.5);
+  top: -70px;
+}
+.user_logo img {
+  font-size: 5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.login_form h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  letter-spacing: 2px;
+}
+
+.login_form label,
+.login_form input {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+}
+.login_form .user {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.login_form input[type="text"],
+input[type="password"] {
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid black;
+  color: #fff;
+}
+
+input::placeholder {
+  height: 50px;
+  color: lightgray;
+  letter-spacing: 2px;
+}
+.login_form input[type="text"]:focus,
+.login_form input[type="password"]:focus {
+  background-color: red;
+  letter-spacing: 1px;
+}
+
+.checkbox_container {
+  padding: 0.5rem 0;
+  color: white;
+}
+.checkbox_container label,
+.checkbox_container input {
+  display: inline;
+  width: 50px;
+  color: darkgray;
+  text-decoration: none;
+}
+.checkbox_container a {
+  text-decoration: none;
+}
+
+/* Submit */
+
+.login_form input[type="submit"] {
+  background-color: red;
+  border: none;
+  border-radius: 25px;
+  color: #fff;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  font-weight: 500;
+  box-shadow: 0 0 10px 2px black;
+}
+
+.login_form input[type="submit"]:hover {
+  background: linear-gradient(to right, rgb(41, 115, 158), rgb(175, 63, 18));
+  color: white;
+  cursor: pointer;
+}
+.login_form input[type="submit"]:active {
+  background: greenyellow;
+  color: black;
+  outline: none;
+}
+
+.more {
+  margin-top: 1rem;
+  text-align: center;
+}
+.more a {
+  color: darkgray;
+  text-decoration: none;
+  letter-spacing: 1px;
+  margin: auto;
+  
+}
+.more a:hover {
+  color: white;
+}
+/* Step 2 */
+.form_container {
+  width: 320px;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-top: 1px solid rgb(245, 116, 116);
+  
+}
+
+.login_form {
+  width: 100%;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.9);
+  border: 1px solid black;
+  box-shadow: 0 0 5px 2px #111;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 4rem 1rem;
+  color: #fff;
+  border-top: 1px solid white;
+/*  display: none;*/
+  animation: form 0.4s ease-out;
+}
+
+@keyframes form {
+  0% {
+    opacity: 0;
+    top: 0px;
+  }
+  70% {
+    opacity: 0;
+    top: -100px;
+  }
+  100% {
+    opacity: 1;
+    top: 0;
+  }
+}
+.login_form.active {
+  display: block;
+}
+
+.user_logo {
+  height: 100px;
+  width: 100px;
+  background-color: red;
+  border-radius: 50%;
+  position: relative;
+  box-sizing: border-box;
+  top: -50px;
+  left: 100px;
+  z-index: 1;
+  cursor: pointer;
+}
+.user_logo:hover img {
+  color: white;
+  
+}
+.remember {
+  cursor: pointer;
+}
+.or {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.form_container {
+  height: 580px;
+}
+
+.login_form input.user {
+  height: 100%;
+  width: 100%;
+  font-size: 1.2rem;
+  transition: 0.5s;
+  border-radius: 25px;
+  outline: none;
+  box-shadow: inset 0 0 5px 1px black;
+  background-color: rgba(245, 0, 0, 0.2);
+ 
+}
+
+.login_form:focus ~ label.user,
+.login_form:valid ~ label.user,
+.login_form input.user:focus ~ label.user,
+.login_form input.user:valid ~ label.user {
+  transform: translateY(-50px);
+  font-size: .9rem;
+  color: white;
+  
+}
+
+.login_form label.user {
+  position: relative;
+  top: -20px;
+  transform: translateY(-50%);
+  padding-left: 1rem;
+  font-size: 1.1rem;
+  color: darkgray;
+  transition: 0.5s;
+  pointer-events: none;
+  
+}
+/* Links  */
+
+.login_form .links {
+  display: flex;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+.login_form .links .facebook,
+.login_form .links .linkedin {
+  display: flex;
+  justify-content: center;
+  justify-self: center;
+  height: 40px;
+  width: 100%;
+  border: 1px solid black;
+  margin: 0 10px;
+  text-align: center;
+  background-color: white;
+  box-shadow: 0 0 4px 1px black;
+  border-radius: 25px;
+  align-items: center;
+  text-decoration: none;
+  
+}
+.login_form .links .facebook span,
+.login_form .links .linkedin span {
+  padding-left: 0.5rem;
+  font-weight: 700;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+}
+/* facebook i */
+.login_form .links .facebook i,
+.login_form .links .facebook span {
+  color: #4267b2;
+  font-size: large;
+  transition: all 0.5s ease-in;
+
+}
+.login_form .links .facebook:hover {
+  border: 1px solid #4267b2;
+  background-color: #4267b2;
+  box-shadow: 0 0 3px 1px #4267b2;
+}
+.login_form .links .facebook:hover i,
+.login_form .links .facebook:hover span {
+  color: white;
+  
+}
+/* linkedin i */
+.login_form .links .linkedin i,
+.login_form .links .linkedin span {
+  color: #0092bb;
+  font-size: large;
+  transition: all 0.5s ease-in;
+}
+.login_form .links .linkedin:hover {
+  border: 1px solid #0092bb;
+  background-color: #0092bb;
+  box-shadow: 0 0 3px 1px #0092bb;
+}
+.login_form .links .linkedin:hover i,
+.login_form .links .linkedin:hover span {
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+/* Home Page */
+#home h1 {
+  color: white;
+  font-size: 10rem;
+  text-align: center;
+}

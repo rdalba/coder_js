@@ -1,0 +1,34 @@
+.banner-header {
+margin-top: 0px;
+background-color: red;
+color: white;
+font-size: 17px;
+}
+
+.banner-header img {
+    width: 70px;
+    height: 70px;
+}
+
+.contenedor__banner-header{
+    display: grid; /* para armar grilla  seleccionando columnas, lineas y separador */
+    grid-template-columns: 1fr 1fr 1fr;   /* es para dividir las columnas en fracciones*/
+    text-align: left;
+    align-items: center;
+}
+
+.santander-aplicacion {
+text-align: center;
+/*border: 2px solid white;*/
+}
+.banner-header  h1 {
+    display: none;
+    font-size: 2.5em;
+    
+}
+
+.banner-header  h2 {
+    font-size: 1.3em;
+}
+
+

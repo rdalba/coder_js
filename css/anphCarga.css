@@ -1,0 +1,163 @@
+@import "./menu.css";
+@import "./banner.css";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+  
+body {
+    height: 100vh;
+    font-family: sans-serif;
+    background: url(../img/imatge.jpg) no-repeat center
+    center/cover;
+}
+
+.anphCarga-contenedor{
+    background-color: rgba(0, 0, 0, 0.8);
+    color: red;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding-right: 30px;
+    z-index: 999;
+    width: 50%;
+    margin-top: 100px;
+}
+
+.anphCarga-contenedor h1{
+    text-align: center;
+    color: white;
+    font-size: 2em;
+    padding: 10px;
+}
+
+.anphCarga__preguntas{
+    margin-top: 30px;
+    display: block;
+    width: 95%;
+    font-size: 1em;
+    color: red;
+    border: 1px solid black;
+    background-color: white;
+    padding: 15px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    margin-left: 30px;  
+}
+
+.anphCarga__preguntas:hover{
+    background-color: red;
+    color: white;
+}
+
+.anph-contenedor .submenu {
+    width: 100%;
+    position: absolute;
+}
+
+.anph-contenedor .menu__link{
+    border-radius: 20px;
+    background-color: #333;
+}
+.anph-contenedor .menu__item{
+    font-size: .8em;
+}
+
+.anph-contenedor .container-submenu {
+    padding-top: 15px;
+}
+
+.anph__nav {
+    border-bottom: 1px solid white;
+}
+
+.anphCargabottom-contenedor{
+    margin-top: 30px;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+    border: none;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: white;
+    font-size: 13px;
+}
+/*BOTONES*/
+.anphCarga__bottom {
+    width: 100%;
+    border: none;
+    outline: none;
+    height: 40px;
+    background: white;
+    color: red;
+    font-size: 1em;
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 10px;
+    text-decoration: none;
+    align-items: baseline;
+}
+
+.anphCarga__bottom:hover {
+    background: red;
+    color: white;
+}
+
+.anphCarga__respuesta {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    
+    
+}
+.anphCarga__respuesta_in{
+    background-color:rgb(68, 62, 62) ;
+    color: rgb(223, 219, 219);
+    
+    border-radius: 10px;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+    width: 50%;
+    
+}
+.anphCarga__respuesta_in:hover {
+    color: rgb(241, 2, 2);
+    background-color: white;
+}
+.lista_item {
+    background-color: white;
+    color: red;
+}
+
+.lista_item:hover {
+    background-color: red;
+    color: white;
+}
+.anph__bottom{
+    width: 100%;
+    border: none;
+    outline: none;
+    height: 40px;
+    background: red;
+    color: white;
+    font-size: 18px;
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.anph__bottom:hover {
+    background: black;
+    color: white;
+}
+

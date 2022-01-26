@@ -1,0 +1,52 @@
+@import url(./style.css);
+/* Lista */
+.account_container {
+    margin: auto;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 1px;
+    width: 900px;
+    display: flex;
+
+  }
+   
+  #CreateAccount h1 {
+    font-size: 2rem;
+  }
+  #CreateAccount .inputs_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+  }
+
+  .btnInput {
+    margin-top: 20px;
+  }
+  .users_table {
+    background-color: rgba(1, 1, 1, 0.6);
+    color: white;
+    border: 1px solid grey;
+    box-shadow: 0 0 5px 2px #111;
+    width: 100%;
+  }
+  .users_table th {
+    font-size: 1.2rem;
+    /* color: red; */
+  }
+  .users_table tbody tr:nth-child(odd) {
+    background-color: rgba(225, 0, 0, 0.2);
+    /* color: white; */
+    padding: 2rem 0;
+  }
+  .users_table tbody td {
+    padding: 1rem 0.5rem;
+    font-size: 1.2rem;
+  }
+  .deleteUser {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+  }
+
+  .user_logo {
+    display: none;
+  }

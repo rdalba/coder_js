@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
+  <script src="https://kit.fontawesome.com/75e53ee709.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./css/style.css" />
+  <title>Loguin</title>
+</head>
+
+<body>
+  <section class="form_container">
+    <div class="user_logo">
+      <img src="./img/llamablanca.png" alt="">
+      <!--<i class="fa fa-user"></i> -->
+    </div>
+    <form action="./html/principal.html" method="GET" target="_blank" class="login_form">
+      <h1>AutoDR</h1>
+      <!-- User -->
+      <div class="input-field User">
+        <input type="text" class="user" required />
+        <label for="name" class="user">Usuario</label>
+      </div>
+      <!-- Password -->
+      <div class="input-field Password">
+        <input type="password" class="user" required />
+        <label for="password" class="user">Password</label>
+      </div>
+      <div class="checkbox_container">
+        <input type="checkbox" id="checkbox" />
+        <a href="">
+          <label for="checkbox" class="remember">Recuerde mi Usuario</label>
+        </a>
+      </div>
+
+      <input type="submit" value="Login" />
+      
+    
+      
+      <label for="" class="or">- o -</label>
+      
+      <div class="links">
+        <div class="facebook">
+          <a href="https://mail.google.com/mail/u/0/#inbox">
+            <i class="fab fa-chrome"><span>Chrome</span></i>
+          </a>
+        </div>
+        <div class="linkedin">
+          <a href="https://www.linkedin.com/">
+            <i class="fab fa-linkedin"><span>linkedin</span></i>
+          </a>
+        </div>
+      </div>
+      <div class="more">
+        <label for=""><a href="./html/resetPassword.html">Olvido su Password?</a></label>
+        <label for=""><a href="./html/createAccount.html">Crear un nuevo Usuario</a></label>
+      </div>
+    </form>
+  </section>
+  <!-- EFECTO JQUERY  -->        
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="./js/jquery.ripples-min.js"></script>
+  <script src="./js/water.js"></script>
+  
+  <!-- RECAPTCHA API  -->        
+  <script src="https://www.google.com/recaptcha/api.js"></script>
+  <script>
+    function onSubmit(token) {
+      document.getElementById("demo-form").submit();
+    }
+  </script>
+
+  <script src="./js/index.js"></script>
+</body>
+
+</html>
